@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: my-node-app
+    runtime: node  
+    region: oregon  
+    buildCommand: |
+      npm install
+      npx knex migrate:latest --knexfile=src/knexfile.ts
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: "3000"
