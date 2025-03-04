@@ -32,6 +32,7 @@ GET	        /api/users/:id	    Get a specific user by ID
 GET	        /api/users/count	Get total user count
 POST	    /api/addresses	    Create a user address
 GET	        /api/addresses/:userId	Get a user’s address
+PATCH	    /api/addresses/:userId	Update a user’s address
 POST	    /api/posts	            Create a new blog post
 GET	        /api/posts	            Retrieve all blog posts
 
